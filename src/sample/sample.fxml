@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="440.0" prefWidth="595.0">
+         <children>
+            <TextField fx:id="input" alignment="CENTER_RIGHT" layoutX="31.0" layoutY="33.0" prefHeight="33.0" prefWidth="550.0" />
+            <Button fx:id="plus" layoutX="473.0" layoutY="80.0" mnemonicParsing="false" onAction="#plus" prefHeight="100.0" prefWidth="100.0" text="+">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="eq" layoutX="473.0" layoutY="307.0" mnemonicParsing="false" onAction="#eq" prefHeight="100.0" prefWidth="100.0" text="=">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="minus"
+                    onAction="#minus"
+                    layoutX="346.0" layoutY="80.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="-">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="div"
+                    onAction="#div"
+                    layoutX="346.0" layoutY="194.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="/">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="mul"
+                    onAction="#mul"
+                    layoutX="473.0" layoutY="194.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="*">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+         </children></AnchorPane>
+   </children>
+</GridPane>
